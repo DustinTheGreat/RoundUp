@@ -1,0 +1,13 @@
+{% extends 'messenger/base1.html' %}
+{%  block content %}
+<div class="row">
+  <div class="col-xs-6-col col-md-4-col-offset-3">
+    <a href="#" class="thumbnail" style="border:none;">
+      <img src="{{instance.profile_picture}}" alt="" style="width:300px;height:300px;margin-top: 10px;border-radius: 150px;border: 1px solid black;">
+    </a>
+  </div>
+ <center><h3>{{instance.user.username}}</h3></center>
+   <center><h6>{{instance.location}}</h6></center>
+
+</div>
+{% endblock  %}
