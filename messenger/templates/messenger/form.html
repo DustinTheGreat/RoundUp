@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+<title>Round Up</title>
+{% load crispy_forms_tags  %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<body>
+<form method="POST">	
+
+{%csrf_token%}
+{{form|crispy}}
+<input type="Submit" name="">
+
+
+</form>
+<a href="{%  url 'register_view' %}">or Register here!</a>
+</body>
+</html>

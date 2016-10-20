@@ -1,0 +1,14 @@
+{% extends 'messenger/base1.html' %}
+{%  block content %}
+
+{% for obj in instance %}
+
+<div class="col-md-6-offset-3 col-sm-6-offset-3 col-xs-12">
+
+{{obj.title}}
+{{obj.body}}
+</div>
+
+{%  endfor %}
+<div class="post-detail-item">{{obj.comment_set.all  }}</div>
+{% endblock%}

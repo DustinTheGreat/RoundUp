@@ -1,0 +1,10 @@
+{% extends 'messenger/base1.html' %}
+{%  block content %}
+<form method="POST">{%csrf_token%}
+	{{form.as_p}}
+	<input type="Submit" name="">
+
+
+</form>
+
+{%  endblock %}
